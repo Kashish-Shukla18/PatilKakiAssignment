@@ -1,0 +1,63 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+    background-color: #2d2d2d;
+    font-family: sans-serif;
+}
+  .custom-list-item {
+    list-style: none;
+    padding-left: 1.75rem; /* Adjust the padding to make space for the custom bullet */
+    position: relative;
+  }
+
+  .custom-list-item::before {
+    content: '';
+    position: absolute;
+    left: 0.5rem; /* Adjust the position of the custom bullet */
+    top: 0.6rem; /* Adjust the position of the custom bullet */
+    width: 1rem; /* Adjust the size of the custom bullet */
+    height: 1rem; /* Adjust the size of the custom bullet */
+    background-image: url(../src/assets/next.png);
+    background-repeat: no-repeat;
+    background-size: contain; /* Adjust the size of the custom bullet */
+  }
+  
+  .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeInLeft {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes fadeInLeft {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
+  
